@@ -1,0 +1,153 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  color: #2b2d2f;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* TOP BAR  */
+
+.top-bar{
+display: flex;
+align-items: center;
+font-size: 1.5rem;
+border-bottom: black solid 1px;
+font-weight: 600;
+}
+
+.top-bar > img{
+  height: 5rem;
+  width: 5rem;
+  padding: 1rem;
+}
+
+/* RED SPLASH  */
+
+.red-splash ,.blue-splash{
+  height: 24rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-splash{
+  background-image: url('/images/redbg.jpg');
+}
+
+.red-splash-center{
+  width: 75%;
+  height: 13rem;
+  background-color: white;
+  opacity: 75%;
+  border-radius: 2rem;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.red-splash-center > h3{
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+/* FIRST IMAGE AND TEXT  */
+
+.team, .money{
+display: flex;
+flex-direction: column;
+padding: 2rem;
+justify-content: center;
+align-items: center;
+
+}
+
+.team > img, .money > img{
+  width: 22rem;
+  height: 22rem;
+  margin: auto;
+}
+
+.money > img{
+  padding: 3rem;
+}
+
+/* BLUE SPLASH  */
+
+.blue-splash{
+  background-image: url('/images/bluebg.jpg');
+  bottom: 0;
+  left:0;
+  right:0;
+
+}
+
+.blue-splash-center{
+  width: 80%;
+  height: 17rem;
+  background-color: white;
+  opacity: 75%;
+  border-radius: 2rem;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 8px 6px -6px black;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.input{
+  border-radius: 2rem;
+  border: solid 1px gray;
+  padding: 0.5rem;
+}
+
+.submit{
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.submit:hover{
+  cursor: pointer;
+}
+
+
+/* MEDIA QUERY  */
+
+/* Small (sm) */
+@media (min-width: 640px) { /* ... */ }
+
+/* Medium (md) */
+@media (min-width: 768px) { 
+  .team {
+    flex-direction: row;
+  }
+  .money{
+    flex-direction: row-reverse;
+  }
+}
+
+/* Large (lg) */
+@media (min-width: 1024px) {
+  .red-splash-center,.blue-splash-center{
+    width: 40%;
+  }
+
+  .team-money{
+    width: 70%;
+    margin: auto;
+  }
+ }
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) { 
+  .team-money{
+    width: 55%;
+    margin: auto;
+  }
+
+ }
